@@ -1,6 +1,7 @@
 # For more information: https://laravel.com/docs/sail
 version: '3'
 services:
+
     laravel.test:
         build:
             context: ./vendor/laravel/sail/runtimes/8.0
@@ -68,6 +69,7 @@ services:
             - '/dev/shm:/dev/shm'
        networks:
            - sail
+
 networks:
     sail:
         driver: bridge
